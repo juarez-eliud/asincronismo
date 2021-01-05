@@ -6,7 +6,11 @@
   "scripts": {
     "callback": "node src/callback/index.js",
     "callback:challenge": "node src/callback/challenge.js",
-    "promise": "node src/promise/index.js"
+    "promise": "node src/promise/index.js",
+    "promise:challenge": "node src/promise/challenge.js",
+    "async": "node src/async/index.js",
+    "async:challenge": "node src/async/challenge.js",
+    "fetch": "node src/fetch/challenge.js"
   },
   "keywords": [
     "callbacks",
@@ -16,6 +20,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "xmlhttprequest": "^1.8.0"
   }
 }
