@@ -58,4 +58,22 @@ const anotherFunction = async () => {
     }
 };
 anotherFunction();
-
+//Ej segundos
+const delay = () => {
+    return new Promise(
+        resolve => setTimeout(resolve, 1000)
+    )
+};
+const counter = async() => {
+    await delay();
+    console.log('one second')
+    await delay();
+    console.log('two seconds')
+    await delay();
+    console.log('three seconds')
+    await delay();
+    console.log('four seconds')
+    await delay();
+    console.log('five seconds')
+};
+counter();
